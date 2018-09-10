@@ -1,0 +1,21 @@
+package br.com.drogaria.test;
+
+import br.com.drogaria.domain.Fabricante;
+import br.com.drogaria.domain.Produto;
+
+public class ProdutoDAOTeste {
+
+	public void salvar(){
+	Produto p= new Produto();
+	p.setDescricao("teste Junit salvar");
+	p.setPreco(10.00);
+	p.setQuantidade(10L);
+	
+	Fabricante f= new Fabricante();
+	f.setCodigo(15L); //codigo do fabricante
+	//não precisa settar a descrição
+	
+	
+	
+	}
+}

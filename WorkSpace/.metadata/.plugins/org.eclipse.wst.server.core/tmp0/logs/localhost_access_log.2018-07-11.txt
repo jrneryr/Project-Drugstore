@@ -1,0 +1,5 @@
+127.0.0.1 - - [11/Jul/2018:17:17:29 -0300] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [11/Jul/2018:17:17:39 -0300] "GET /ComponentesJSF/faces/tela.xhtml HTTP/1.1" 200 773
+0:0:0:0:0:0:0:1 - - [11/Jul/2018:17:18:19 -0300] "GET /ComponentesJSF/faces/tela.xhtml HTTP/1.1" 200 773
+0:0:0:0:0:0:0:1 - - [11/Jul/2018:17:18:19 -0300] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [11/Jul/2018:17:23:23 -0300] "GET /ComponentesJSF/faces/tela.xhtml HTTP/1.1" 200 832

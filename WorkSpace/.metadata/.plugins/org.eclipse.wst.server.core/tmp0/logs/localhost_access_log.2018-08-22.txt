@@ -1,0 +1,13 @@
+127.0.0.1 - - [22/Aug/2018:19:40:10 -0300] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [22/Aug/2018:19:40:13 -0300] "GET /Drogaria/faces/pages/fabricante.xhtml HTTP/1.1" 200 12929
+0:0:0:0:0:0:0:1 - - [22/Aug/2018:19:40:13 -0300] "GET /Drogaria/faces/javax.faces.resource/estilos.css;jsessionid=ED4F48C796589C82DC754268E88CE1D3?ln=css HTTP/1.1" 200 259
+0:0:0:0:0:0:0:1 - - [22/Aug/2018:19:40:13 -0300] "GET /Drogaria/faces/javax.faces.resource/layout/layout.css;jsessionid=ED4F48C796589C82DC754268E88CE1D3?ln=primefaces&v=6.2 HTTP/1.1" 200 464
+0:0:0:0:0:0:0:1 - - [22/Aug/2018:19:40:13 -0300] "GET /Drogaria/faces/javax.faces.resource/core.js;jsessionid=ED4F48C796589C82DC754268E88CE1D3?ln=primefaces&v=6.2 HTTP/1.1" 200 31279
+0:0:0:0:0:0:0:1 - - [22/Aug/2018:19:40:13 -0300] "GET /Drogaria/faces/javax.faces.resource/jquery/jquery.js;jsessionid=ED4F48C796589C82DC754268E88CE1D3?ln=primefaces&v=6.2 HTTP/1.1" 200 86931
+0:0:0:0:0:0:0:1 - - [22/Aug/2018:19:40:13 -0300] "GET /Drogaria/faces/javax.faces.resource/layout/layout.js;jsessionid=ED4F48C796589C82DC754268E88CE1D3?ln=primefaces&v=6.2 HTTP/1.1" 200 93285
+0:0:0:0:0:0:0:1 - - [22/Aug/2018:19:40:13 -0300] "GET /Drogaria/faces/javax.faces.resource/jquery/jquery-plugins.js;jsessionid=ED4F48C796589C82DC754268E88CE1D3?ln=primefaces&v=6.2 HTTP/1.1" 200 261371
+0:0:0:0:0:0:0:1 - - [22/Aug/2018:19:40:13 -0300] "GET /Drogaria/faces/javax.faces.resource/components.js;jsessionid=ED4F48C796589C82DC754268E88CE1D3?ln=primefaces&v=6.2 HTTP/1.1" 200 409040
+0:0:0:0:0:0:0:1 - - [22/Aug/2018:19:40:13 -0300] "GET /Drogaria/faces/javax.faces.resource/components.css;jsessionid=ED4F48C796589C82DC754268E88CE1D3?ln=primefaces&v=6.2 HTTP/1.1" 200 85416
+0:0:0:0:0:0:0:1 - - [22/Aug/2018:19:40:42 -0300] "POST /Drogaria/faces/pages/fabricante.xhtml;jsessionid=ED4F48C796589C82DC754268E88CE1D3 HTTP/1.1" 200 209
+0:0:0:0:0:0:0:1 - - [22/Aug/2018:19:40:44 -0300] "POST /Drogaria/faces/pages/fabricante.xhtml;jsessionid=ED4F48C796589C82DC754268E88CE1D3 HTTP/1.1" 200 209
+0:0:0:0:0:0:0:1 - - [22/Aug/2018:19:41:04 -0300] "POST /Drogaria/faces/pages/fabricante.xhtml;jsessionid=ED4F48C796589C82DC754268E88CE1D3 HTTP/1.1" 200 209
