@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="ProdutoDAOTeste" project="Drogaria" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="br.com.drogaria.test.ProdutoDAOTeste" time="0.608">
-    <testcase name="excluir" classname="br.com.drogaria.test.ProdutoDAOTeste" time="0.374"/>
-    <testcase name="listar" classname="br.com.drogaria.test.ProdutoDAOTeste" time="0.032"/>
-    <testcase name="salvar" classname="br.com.drogaria.test.ProdutoDAOTeste" time="0.202"/>
-  </testsuite>
-</testrun>

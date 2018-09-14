@@ -91,4 +91,40 @@ public class ProdutoBean {
 			
 		}
 	}
+	
+	public void excluir(){
+		ProdutoDAO dao= new ProdutoDAO();
+		try {
+			dao.escluir(produto);
+			itens= dao.listar();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			JSFUtil.adicionarMensagemErro(e.getMessage());
+		}
+		JSFUtil.adicionarMensagemSucesso("Produto foi excluido com sucesso");
+	}
+	
+	public void prepararEditar(){
+		try {
+		FabricanteDAO dao= new FabricanteDAO();
+		
+			comboFabricantes= dao.listar();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			JSFUtil.adicionarMensagemErro(e.getMessage() + "Não foi possivel carregar os Fabricantes disponiveis");
+		}
+	}
+	
+	public void editar(){
+		try {
+		ProdutoDAO dao= new ProdutoDAO();
+		dao.editar(produto);
+		
+		JSFUtil.adicionarMensagemSucesso("Produto editado com sucesso");
+		itens= dao.listar();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			JSFUtil.adicionarMensagemErro(e.getMessage());
+		}
+	}
 }

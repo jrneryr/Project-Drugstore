@@ -47,14 +47,14 @@
 		<p:dialog widgetVar="dlgFabNovo" closable="false" draggable="false" resizable="false" modal="true" appendTo="@(body)" header="Fabricante - Novo" >
 			<h:form id="frmFabNovo">
 				<h:panelGrid columns="2" id="pnlFabNovo">
-					<p:outputLabel value="Descrição: " />
-					<p:inputText size="30" maxlength="50" value="#{MBFabricante.fabricante.descricao}"/>
+					<p:outputLabel for="txtDescFabNovo" value="Descrição: " />
+					<p:inputText id="txtDescFabNovo" size="30" maxlength="50" value="#{MBFabricante.fabricante.descricao}" required="true" requiredMessage="Campo 'Descrição' Obrigatório!"/>
 				</h:panelGrid>
 				
 				<h:panelGrid columns="2">
 					<p:commandButton value="Gravar" actionListener="#{MBFabricante.novo}"
-					 oncomplete="PF('dlgFabNovo').hide(); tabelaFabricantes.clearFilters();" update=":frmFabListagem:tblFabricantes :msgGlobal"/>
-					<p:commandButton value="Cancelar" onclick="PF('dlgFabNovo').hide();"/>
+					 oncomplete="verificar(xhr, status, args, 'dlgFabNovo', 'tabelaFabricantes');" update=":frmFabListagem:tblFabricantes :msgGlobal"/>
+					<p:commandButton value="Cancelar" process="@this" onclick="PF('dlgFabNovo').hide();"/>
 				</h:panelGrid>
 			</h:form>
 		</p:dialog>
@@ -71,7 +71,7 @@
 				<h:panelGrid columns="2">
 					<p:commandButton value="Excluir" actionListener="#{MBFabricante.excluir}" 
 						oncomplete="PF('dlgFabExcluir').hide(); tabelaFabricantes.clearFilters();" update=":frmFabListagem:tblFabricantes :msgGlobal"/>
-					<p:commandButton value="Cancelar" onclick="PF('dlgFabExcluir').hide();"/>
+					<p:commandButton value="Cancelar" process="@this" onclick="PF('dlgFabExcluir').hide();"/>
 				</h:panelGrid>
 			</h:form>
 		</p:dialog>
@@ -81,14 +81,14 @@
 				<h:panelGrid id="pnlFabEditar" columns="2">
 					<p:outputLabel value="Código"/>
 					<h:outputText value="#{MBFabricante.fabricante.codigo}"/>
-					<p:outputLabel value="Descrição"/>
-					<h:inputText size="30" maxlength="50" value="#{MBFabricante.fabricante.descricao}"/>
+					<p:outputLabel for="txtDescFabEditar" value="Descrição"/>
+					<h:inputText id="txtDescFabEditar" size="30" maxlength="50" value="#{MBFabricante.fabricante.descricao}" required="true" requiredMessage="Campo 'Descrição' Obrigatório"/>
 				</h:panelGrid>
 				
 				<h:panelGrid columns="2">
 					<p:commandButton value="Editar" actionListener="#{MBFabricante.editar}"
-					 oncomplete="PF('dlgFabEditar').hide(); tabelaFabricantes.clearFilters();" update=":frmFabListagem:tblFabricantes :msgGlobal"/>
-					<p:commandButton value="Cancelar" onclick="PF('dlgFabEditar').hide();"/>
+					 oncomplete="verificar(xhr, status, args, 'dlgFabEditar', 'tabelaFabricantes');" update=":frmFabListagem:tblFabricantes :msgGlobal"/>
+					<p:commandButton value="Cancelar" process="@this" onclick="PF('dlgFabEditar').hide();"/>
 				</h:panelGrid>
 			</h:form>
 		</p:dialog>

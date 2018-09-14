@@ -1,10 +1,10 @@
-AbstractTextEditor.Color.Background=28,31,34
+AbstractTextEditor.Color.Background=25,29,31
 SQLCommentColor=199,221,12
 SQLKeywordColor=141,203,226
 SQLOperatorColor=216,216,216
 SQLStringColor=255,198,0
 SQLTextColor=216,216,216
-cfcommentBackgroundColor=28,31,34
+cfcommentBackgroundColor=25,29,31
 cfcommentColor=199,221,12
 cfkeywordColor=141,203,226
 cfnumberColor=127,179,71
