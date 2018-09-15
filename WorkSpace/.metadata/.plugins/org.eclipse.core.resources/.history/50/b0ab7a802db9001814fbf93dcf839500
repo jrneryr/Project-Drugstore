@@ -74,9 +74,7 @@
 					</p:inputText>
 					
 					<p:outputLabel for="txtQuantProdNovo" value="Quantidade"/>
-					<p:inputText id="txtQuantProdNovo" value="#{MBProduto.produto.quantidade}" size="10" required="true" requiredMessage="Campo 'Quantidade' Obrigotório">
-						<f:validateLongRange minimum="0" maximum="1000"/>
-					</p:inputText>
+					<p:inputText id="txtQuantProdNovo" value="#{MBProduto.produto.quantidade}" size="10" required="true" requiredMessage="Campo 'Quantidade' Obrigotório"/>
 					
 					<p:outputLabel for="txtFabProdNovo" value="Fabricante:"/>
 					<p:selectOneMenu id="txtFabProdNovo" value="#{MBProduto.produto.fabricante.codigo}" filter="true" required="true" requiredMessage="Campo 'Fabricante' Obrigatório">
@@ -138,9 +136,7 @@
 					</p:inputText>
 					
 					<p:outputLabel for="txtQuantProdEd" value="Quantidade"/>
-					<p:inputText id="txtQuantProdEd" value="#{MBProduto.produto.quantidade}" size="10" required="true" requiredMessage="Campo 'Quantidade' Obrigatório">
-						<f:validateLongRange minimum="0" maximum="1000"/>
-					</p:inputText>
+					<p:inputText id="txtQuantProdEd" value="#{MBProduto.produto.quantidade}" size="10" required="true" requiredMessage="Campo 'Quantidade' Obrigatório"/>
 					
 					<p:outputLabel for="txtFabProdEd" value="Fabricante"/>
 					<p:selectOneMenu id="txtFabProdEd" value="#{MBProduto.produto.fabricante.descricao}" filter="true" required="true" requiredMessage="Campo 'Fabricante' Obrigatório">

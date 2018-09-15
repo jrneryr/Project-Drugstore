@@ -69,14 +69,11 @@
 					
 					<p:outputLabel for="txtPrecProdNovo" value="Preço"/>
 					<p:inputText id="txtPrecProdNovo" value="#{MBProduto.produto.preco}" size="10" required="true" requiredMessage="Campo 'Preço' Obrigatório">
-						<f:convertNumber pattern="0.00"/>
-						<f:validateDoubleRange minimum="0.00" maximum="9999.99"/>
+						<f:convertNumber/>
 					</p:inputText>
 					
 					<p:outputLabel for="txtQuantProdNovo" value="Quantidade"/>
-					<p:inputText id="txtQuantProdNovo" value="#{MBProduto.produto.quantidade}" size="10" required="true" requiredMessage="Campo 'Quantidade' Obrigotório">
-						<f:validateLongRange minimum="0" maximum="1000"/>
-					</p:inputText>
+					<p:inputText id="txtQuantProdNovo" value="#{MBProduto.produto.quantidade}" size="10" required="true" requiredMessage="Campo 'Quantidade' Obrigotório"/>
 					
 					<p:outputLabel for="txtFabProdNovo" value="Fabricante:"/>
 					<p:selectOneMenu id="txtFabProdNovo" value="#{MBProduto.produto.fabricante.codigo}" filter="true" required="true" requiredMessage="Campo 'Fabricante' Obrigatório">
@@ -103,9 +100,7 @@
 					<h:outputText value="#{MBProduto.produto.descricao}"/>
 					
 					<p:outputLabel value="Preço: "/>
-					<h:outputText value="#{MBProduto.produto.preco}">
-						<f:convertNumber pattern="0.00"/>
-					</h:outputText>
+					<h:outputText value="#{MBProduto.produto.preco}"/>
 					
 					<p:outputLabel value="Quantidade: "/>
 					<h:outputText value="#{MBProduto.produto.quantidade}"/>
@@ -133,14 +128,11 @@
 					
 					<p:outputLabel for="txtPrecProdEd" value="Preço"/>
 					<p:inputText id="txtPrecProdEd" value="#{MBProduto.produto.preco}" size="10" required="true" requiredMessage="Campo 'Preço' Obrigatório">
-						<f:convertNumber pattern="0.00"/>
-						<f:validateDoubleRange minimum="0.00"/>
+						<f:convertNumber/>
 					</p:inputText>
 					
 					<p:outputLabel for="txtQuantProdEd" value="Quantidade"/>
-					<p:inputText id="txtQuantProdEd" value="#{MBProduto.produto.quantidade}" size="10" required="true" requiredMessage="Campo 'Quantidade' Obrigatório">
-						<f:validateLongRange minimum="0" maximum="1000"/>
-					</p:inputText>
+					<p:inputText id="txtQuantProdEd" value="#{MBProduto.produto.quantidade}" size="10" required="true" requiredMessage="Campo 'Quantidade' Obrigatório"/>
 					
 					<p:outputLabel for="txtFabProdEd" value="Fabricante"/>
 					<p:selectOneMenu id="txtFabProdEd" value="#{MBProduto.produto.fabricante.descricao}" filter="true" required="true" requiredMessage="Campo 'Fabricante' Obrigatório">
