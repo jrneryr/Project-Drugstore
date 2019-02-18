@@ -2,9 +2,9 @@
  Controle de produtos, fornecedores e usuários.
 
 Tecnologias envolvidas: versionamento (git)
-manipulação de templates (facelets)
+manipulação de telas/páginas (facelets)
 front-end (xhtml, css, javascript jquery, primefaces)
-back-end (jsf, ajax, mysql)
+back-end (jsf, ajax, mysql, javascript)
 
 Método ágil: scrum/ trello
 
